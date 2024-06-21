@@ -39,7 +39,11 @@ img {
         height: 100%;
         z-index: -1;
         background-image: url('/public/images/sectionWhoOwns/bg.svg');
+        background-color: rgba(86, 91, 104, 1);
+        ;
+        opacity: 0.1;
         background-repeat: no-repeat; 
+        background-position: center;
     }
 
     .container {
@@ -90,6 +94,7 @@ img {
                 padding: 25px 17px;
                 width: 100%;
                 min-height: 377px;
+                background-color: white;
             }
             
             .card-title {

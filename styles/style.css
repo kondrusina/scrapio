@@ -35,7 +35,10 @@ img {
     height: 100%;
     z-index: -1;
     background-image: url("/public/images/sectionWhoOwns/bg.svg");
-    background-repeat: no-repeat; }
+    background-color: #565b68;
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-position: center; }
   .who-owns .container {
     max-width: 1063px;
     margin: 0 auto; }
@@ -72,7 +75,8 @@ img {
                 box-shadow: 0px 4px 47.4px 0px #2D39451A;
         padding: 25px 17px;
         width: 100%;
-        min-height: 377px; }
+        min-height: 377px;
+        background-color: white; }
       .who-owns .container .wrapper .card-title {
         color: var(--color-title);
         font-size: 24px;
