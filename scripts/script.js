@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
             text: 'Web scraping can extract data from social media platforms to analyze user trends, sentiment, and behavior. This information can be valuable for marketing and advertising departments, government agencies for segmentation and creating unique offers.'
         },
         {
-            img: '/public/images/sectionWhoOwns/academic.png',
+            img: 'public/images/sectionWhoOwns/academic.png',
             title: 'Financial Data Analysis',
             text: 'Web scraping to collect data for scientific research and analysis. Necessary for companies conducting market research and non-profit organizations.ion for card 6.'
         }
