@@ -21,14 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
             text: 'Web scraping can collect financial data from sources such as stock exchange websites, news sites, and regulatory documents. This data can be analyzed and systematized, sold to investors, traders and financial institutions.'
         },
         {
-            img: 'ppublic/images/whoOwns/scial.png',
-            title: 'Financial Data Analysis',
+            img: 'public/images/whoOwns/social.png',
+            title: 'Social Media Monitoring',
             text: 'Web scraping can extract data from social media platforms to analyze user trends, sentiment, and behavior. This information can be valuable for marketing and advertising departments, government agencies for segmentation and creating unique offers.'
         },
         {
             img: 'public/images/whoOwns/academic.png',
-            title: 'Financial Data Analysis',
-            text: 'Web scraping to collect data for scientific research and analysis. Necessary for companies conducting market research and non-profit organizations.ion for card 6.'
+            title: 'Academic Research',
+            text: 'Web scraping to collect data for scientific research and analysis. Necessary for companies conducting market research and non-profit organizations.'
         }
     ];
 

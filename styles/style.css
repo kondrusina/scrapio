@@ -21,6 +21,9 @@ img {
 ul {
   list-style: none; }
 
+.body {
+  padding: 10px; }
+
 .header {
   max-width: 1920px;
   background-image: url("/public/img_header/header_ware.png");
@@ -174,7 +177,7 @@ p {
     width: 100%;
     height: 100%;
     z-index: -1;
-    background-image: url("../public/images/whoOwns/bg.svg");
+    background-image: url("/public/images/whoOwns/bg.svg");
     background-color: #565b68;
     opacity: 0.1;
     background-repeat: no-repeat;
