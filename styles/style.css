@@ -1,9 +1,19 @@
+
+:root {
+  --color-all: #565B68;
+  --color-uptitle: #867DE8;
+  --color-title: #283456;
+  --border-radius: 16px;
+  --weight-700: 700;
+  --weight-600: 600;
+  --weight-400: 400; }
+
 * {
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
 
 ul {
   list-style: none;
@@ -123,7 +133,9 @@ p {
       -ms-flex-align: center;
           align-items: center;
   max-width: 50%;
-}
+
+  font-weight: var(--weight-400); }
+
 
 .right_icon {
   display: -webkit-box;
@@ -140,6 +152,78 @@ p {
   height: 23px;
   margin-right: 10px;
 }
+
+/* SECTION WHO OWNS START */
+.who-owns {
+  padding: 1.66% 1.25% 6.875% 1.25%;
+  position: relative;
+  overflow: hidden; }
+  .who-owns::before {
+    background-blend-mode: multiply;
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url("../public/images/sectionWhoOwns/bg.svg");
+    background-color: #565b68;
+    opacity: 0.1;
+    background-repeat: no-repeat;
+    background-position: center; }
+  .who-owns .container {
+    max-width: 1063px;
+    margin: 0 auto; }
+    .who-owns .container .up-title {
+      color: var(--color-uptitle);
+      font-size: 20px;
+      font-weight: var(--weight-700);
+      text-transform: uppercase;
+      line-height: 24px; }
+    .who-owns .container .title {
+      color: var(--color-title);
+      font-weight: var(--weight-700);
+      font-size: 38px;
+      line-height: 45.6px; }
+    .who-owns .container .who-owns__title,
+    .who-owns .container .who-owns__text {
+      max-width: 82.8%; }
+    .who-owns .container .who-owns__title {
+      margin: 0.85% 0 1.50% 0; }
+    .who-owns .container .text {
+      font-weight: var(--weight-400);
+      font-size: 20px;
+      line-height: 28px;
+      color: var(--color-all); }
+    .who-owns .container .wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, 343px);
+      gap: 17px;
+      padding-top: 7.52%; }
+      .who-owns .container .wrapper .card {
+        border: 1px solid #2D39451A;
+        border-radius: var(--border-radius);
+        -webkit-box-shadow: 0px 4px 47.4px 0px #2D39451A;
+                box-shadow: 0px 4px 47.4px 0px #2D39451A;
+        padding: 25px 17px;
+        width: 100%;
+        min-height: 377px;
+        background-color: white; }
+      .who-owns .container .wrapper .card-title {
+        color: var(--color-title);
+        font-size: 24px;
+        font-weight: var(--weight-600);
+        line-height: 26.4px;
+        text-align: left;
+        margin: 6.19% 0; }
+      .who-owns .container .wrapper .card-text {
+        color: var(--color-all);
+        font-size: 14px;
+        font-weight: var(--weight-400);
+        line-height: 19.6px;
+        text-align: left; }
 
 .botton_lonIn {
   width: 140px;
