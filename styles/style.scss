@@ -1,4 +1,3 @@
-
 :root {
     --color-all: #565B68;
     --color-uptitle: #867DE8; 
@@ -20,6 +19,121 @@
 img {
     max-width: 100%;
 }
+
+ul {
+    list-style: none;
+    }
+    .header {
+    max-width: 1920px;
+    background-image: url("/public/img_header/header_ware.png");
+    background-size: auto;
+    background-repeat: no-repeat;
+    }
+    .conteiner{
+    margin-left: 435px;
+    margin-right: 166px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    }
+    
+    .main_header{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    
+    }
+    .header_left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 50%;
+    }
+    .img_logo{
+    width: 180px;
+    height: 40px;
+    margin-top: 16px;
+    margin-bottom: 40px;
+    }
+    
+    h2 {
+    color: #ffffff;
+    font-family: Open Sans;
+    font-size: 60px;
+    line-height: 66px;
+    text-align: left;
+    margin-bottom: 10px;
+    }
+    
+    h3 {
+    color: #ffffff;
+    font-family: Open Sans;
+    font-size: 38px;
+    line-height: 45.6px;
+    text-align: left;
+    }
+    
+    .botton_start-now{
+    width: 304px;
+    height: 84px;
+    color: #ffffff;
+    font-family: Open Sans;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #EE3A5E, #FCC45C);
+    transition: background-color 0.3s ease;
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    }
+    
+    p{
+    color: #565B68;
+    font-size: 16px;
+    width: 545px;
+    text-align: left;
+    margin-top: 30px;
+    }
+    
+    .header_rigth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+    }
+    
+    .right_icon{
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+    }
+    .img_english{
+    width: 101px;
+    height: 23px;
+    margin-right: 10px;
+    }
+    .botton_lonIn{
+    width: 140px;
+    height: 44px;
+    color: #ffffff;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .img_myDoc{
+    width: 730px;
+    margin: 35px 0;
+    }
+  
+
+
+
 
 /* SECTION WHO OWNS START */
 .who-owns {
