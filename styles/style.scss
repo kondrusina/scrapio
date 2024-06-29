@@ -330,7 +330,7 @@ p{
   }
 
   .container_main {
-    max-width: 1343px;
+    @include container-max-width(1343px);
     padding-top: 59.57px;
   }
 

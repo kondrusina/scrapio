@@ -311,6 +311,7 @@ p {
     margin: 0; }
   #legality .container_main {
     max-width: 1343px;
+    margin: 0 auto;
     padding-top: 59.57px; }
   #legality h3 {
     color: var(--color-title3);
