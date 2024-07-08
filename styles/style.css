@@ -85,7 +85,7 @@ ul {
   list-style: none; }
 
 .header {
-  min-width: 1920px;
+  max-width: 1920px;
   background-image: url("/public/img_header/header_ware.png");
   background-size: auto;
   background-repeat: no-repeat; }
@@ -219,7 +219,6 @@ p {
           align-items: center; }
 
 .img_myDoc {
-  width: 730px;
   margin: 35px 0; }
 
 @media (max-width: 760px) {
