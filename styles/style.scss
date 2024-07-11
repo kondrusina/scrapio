@@ -1,6 +1,6 @@
 @import 'variables.scss';
 @import 'sectionWhoOwns.scss';
-@import 'ExamplesLegality.scss';
+@import 'examplesLegality.scss';
 
 
 * {
@@ -55,7 +55,7 @@ margin-top: 16px;
 margin-bottom: 40px;
 }
 
-h2 {
+.header_left h2 {
 color: #ffffff;
 font-size: 60px;
 line-height: 66px;
@@ -63,7 +63,7 @@ text-align: left;
 margin-bottom: 10px;
 }
   
-h3 {
+.header_left h3 {
   color: #ffffff;
   font-size: 38px;
   line-height: 45.6px;
@@ -85,11 +85,11 @@ h3 {
   margin-top: 30px;
 }
   
-p{
+.header_left p{
   color: #565B68;
   font-size: 16px;
   text-align: left;
-  margin-top: 30px;
+  /*margin-top: 30px;*/
 }
   
 .header_rigth {

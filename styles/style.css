@@ -1,208 +1,86 @@
-
-* {
-  font-family: "Open Sans", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-weight: 400;
-}
-
-img {
-  max-width: 100%;
-}
-
-ul {
-  list-style: none;
-}
-
-.header {
-  max-width: 1920px;
-  background-image: url("/public/img_header/header_ware.png");
-  background-size: auto;
-  background-repeat: no-repeat;
-}
-
-.conteiner {
-  max-width: 1343px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-
-.main_header {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  width: 100%;
-}
-
-.header_left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  max-width: 50%;
-}
-
-.img_logo {
-  width: 180px;
-  height: 40px;
-  margin-top: 16px;
-  margin-bottom: 40px;
-}
-
-h2 {
-  color: #ffffff;
-  font-size: 60px;
-  line-height: 66px;
-  text-align: left;
-  margin-bottom: 10px;
-}
-
-h3 {
-  color: #ffffff;
-  font-size: 38px;
-  line-height: 45.6px;
-  text-align: left;
-}
-
-.botton_start-now {
-  width: 304px;
-  height: 84px;
-  color: #ffffff;
-  font-family: Open Sans;
-  border-radius: 50px;
-  background: linear-gradient(90deg, #EE3A5E, #FCC45C);
-  transition: background-color 0.3s ease;
-  font-size: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-}
-
-p {
-  color: #565B68;
-  font-size: 16px;
-  text-align: left;
-  margin-top: 30px;
-}
-
-.header_rigth {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 50%;
-}
-
-.right_icon {
-  display: flex;
-  align-items: center;
-  margin-top: 16px;
-}
-
-.img_english {
-  width: 101px;
-  height: 23px;
-  margin-right: 10px;
-}
-
-.botton_lonIn {
-  width: 140px;
-  height: 44px;
-  color: #ffffff;
-  border-radius: 50px;
-  background-color: rgba(255, 255, 255, 0.2);
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.img_myDoc {
-  margin: 35px 0;
-}
-
 /* SECTION WHO OWNS START */
 .who-owns {
   padding: 1.66% 1.25% 6.875% 1.25%;
   position: relative;
-  overflow: hidden; }
-  .who-owns::before {
-    background-blend-mode: multiply;
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    background-image: url("../public/images/whoOwns/bg.svg");
-    background-color: #565b68;
-    opacity: 0.1;
-    background-repeat: no-repeat;
-    background-position: center; }
-  .who-owns .container {
-    max-width: 1343px;
-    margin: 0 auto; }
-    .who-owns .container .up-title {
-      color: #867DE8;
-      font-size: 20px;
-      font-weight: 700;
-      text-transform: uppercase;
-      line-height: 24px; }
-    .who-owns .container .title {
-      color: #283456;
-      font-weight: 700;
-      font-size: 38px;
-      line-height: 45.6px; }
-    .who-owns .container .who-owns__title,
-    .who-owns .container .who-owns__text {
-      max-width: 82.8%; }
-    .who-owns .container .who-owns__title {
-      margin: 0.85% 0 1.50% 0; }
-    .who-owns .container .text {
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 28px;
-      color: #565B68; }
-    .who-owns .container .wrapper {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, 343px);
-      gap: 17px;
-      padding-top: 7.52%; }
-      .who-owns .container .wrapper .card {
-        border: 1px solid #2D39451A;
-        border-radius: 16px;
-        -webkit-box-shadow: 0px 4px 47.4px 0px #2D39451A;
-                box-shadow: 0px 4px 47.4px 0px #2D39451A;
-        padding: 25px 17px;
-        width: 100%;
-        min-height: 377px;
-        background-color: white; }
-      .who-owns .container .wrapper .card-title {
-        color: #283456;
-        font-size: 24px;
-        font-weight: 600;
-        line-height: 26.4px;
-        text-align: left;
-        margin: 6.19% 0; }
-      .who-owns .container .wrapper .card-text {
-        color: #565B68;
-        font-size: 14px;
-        line-height: 19.6px;
-        text-align: left; }
+  overflow: hidden;
+}
+.who-owns::before {
+  background-blend-mode: multiply;
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("../public/images/whoOwns/bg.svg");
+  background-color: rgb(86, 91, 104);
+  opacity: 0.1;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.who-owns .container {
+  max-width: 1343px;
+  margin: 0 auto;
+}
+.who-owns .container .up-title {
+  color: #867DE8;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+.who-owns .container .title {
+  color: #283456;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 45.6px;
+}
+.who-owns .container .who-owns__title,
+.who-owns .container .who-owns__text {
+  max-width: 82.8%;
+}
+.who-owns .container .who-owns__title {
+  margin: 0.85% 0 1.5% 0;
+}
+.who-owns .container .text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #565B68;
+}
+.who-owns .container .wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 343px);
+  gap: 17px;
+  padding-top: 7.52%;
+}
+.who-owns .container .wrapper .card {
+  border: 1px solid rgba(45, 57, 69, 0.1019607843);
+  border-radius: 16px;
+  box-shadow: 0px 4px 47.4px 0px rgba(45, 57, 69, 0.1019607843);
+  padding: 25px 17px;
+  width: 100%;
+  min-height: 377px;
+  background-color: white;
+}
+.who-owns .container .wrapper .card-title {
+  color: #283456;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26.4px;
+  text-align: left;
+  margin: 6.19% 0;
+}
+.who-owns .container .wrapper .card-text {
+  color: #565B68;
+  font-size: 14px;
+  line-height: 19.6px;
+  text-align: left;
+}
 
 /* SECTION WHO OWNS END */
-
-@media (max-width: 760px) {
-  .wrapper {
-    justify-content: center;
-  }
-}/*# sourceMappingURL=style.css.map */
-
 /***EXAMPLES & LEGALYTY***/
 /***EXAMPLES START***/
 #examples {
@@ -224,6 +102,7 @@ p {
   font-size: 20px;
   align-self: flex-start;
   text-transform: uppercase;
+  padding-top: 3%;
 }
 #examples .articles-container {
   width: 1063px;
@@ -231,6 +110,7 @@ p {
   flex-wrap: wrap;
   align-self: flex-start;
   justify-content: space-between;
+  margin-top: 29.94px;
 }
 #examples .articles-container .article-card {
   width: 340px;
@@ -242,25 +122,37 @@ p {
   height: 159px;
   -o-object-fit: cover;
      object-fit: cover;
+  overflow: hidden;
 }
 #examples .articles-container .article-card h1 {
   text-align: start;
-  padding-top: 15px;
   font-weight: 600;
   font-size: 24px;
   color: #283456;
 }
 #examples .articles-container .article-card p {
   text-align: start;
-  padding-top: 15px;
   font-size: 14px;
   line-height: 19.6px;
+}
+#examples .articles-container .article-card .article-card:nth-of-type(2) img {
+  width: 340px;
+  height: 159px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 @media (max-width: 1024px) {
   #examples .container_main {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
+  }
+  #examples .text-exampl {
+    font-size: 20px;
+    text-align: left;
+    padding-top: 3%;
   }
   #examples .articles-container {
     width: 100%;
@@ -275,7 +167,6 @@ p {
   }
   #examples .articles-container .article-card img {
     width: 100%;
-    height: auto;
   }
   #examples .articles-container .article-card h1 {
     font-size: 24px;
@@ -288,10 +179,11 @@ p {
   #examples .text-exampl {
     font-size: 20px;
     text-align: center;
+    padding-top: 3%;
   }
   #examples .articles-container {
     width: 100%;
-    padding: 0 10px;
+    padding: 2% 1%;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -301,14 +193,14 @@ p {
   }
   #examples .articles-container .article-card img {
     width: 100%;
-    height: auto;
+    height: 159px;
+    justify-content: center;
   }
   #examples .articles-container .article-card h1 {
     font-size: 24px;
   }
   #examples .articles-container .article-card p {
     font-size: 16px;
-    line-height: 19.6px;
   }
 }
 @media (max-width: 460px) {
@@ -331,7 +223,7 @@ p {
   }
   #examples .articles-container .article-card img {
     width: 100%;
-    height: auto;
+    height: 159px;
   }
   #examples .articles-container .article-card h1 {
     font-size: 24px;
@@ -387,19 +279,19 @@ p {
   background-size: cover;
   z-index: 0;
 }
-#legality h3,
-#legality h1,
-#legality .container {
-  padding: 1% 0;
-  margin: 0;
-  z-index: 2;
-}
 #legality .container_main {
   max-width: 1343px;
   margin: 0 auto;
   position: relative;
   z-index: 2;
   padding: 1.66% 1.25% 6.875% 1.25%;
+}
+#legality h3,
+#legality h1,
+#legality .container {
+  padding: 1% 0;
+  margin: 0;
+  z-index: 2;
 }
 #legality h3 {
   color: #27AE60;
@@ -429,6 +321,7 @@ p {
   width: 364px;
   height: 364px;
   float: right;
+  padding-left: 23px;
 }
 #legality button {
   width: 470px;
@@ -455,7 +348,6 @@ p {
   }
   #legality .text {
     float: left;
-    text-align: center;
   }
   #legality .image {
     width: 100%;
@@ -521,13 +413,16 @@ p {
     width: 100%;
     float: none;
   }
+  #legality .container .collecting-text {
+    padding-bottom: 29.24px;
+  }
   #legality .container .image {
     display: none;
   }
   #legality button {
-    width: 50%;
-    height: 54px;
-    font-size: 26px;
+    width: 80%;
+    height: 74px;
+    font-size: 32px;
     margin: 20px auto 0;
   }
   #legality::after {
@@ -542,27 +437,30 @@ p {
   #legality .legality_complete {
     text-align: start;
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
+    padding-top: 3%;
   }
   #legality .legality_web {
     text-align: start;
     width: 100%;
     font-size: 26px;
+    padding-top: 16px;
   }
   #legality .container {
     padding: 0 10px;
     flex-direction: column;
   }
   #legality .container .collecting-text {
-    font-size: 14px;
+    font-size: 16px;
+    text-align: justify;
   }
   #legality .container .image {
     display: none;
   }
   #legality button {
-    width: 60%;
-    height: 44px;
-    font-size: 20px;
+    width: 80%;
+    height: 48px;
+    font-size: 24px;
     margin: 20px 10px;
     display: block;
     justify-content: center;
@@ -575,3 +473,134 @@ p {
     background-size: contain;
   }
 }
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  max-width: 1920px;
+  background-image: url("../public/img_header/header_ware.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+
+.conteiner {
+  max-width: 1343px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.main_header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+}
+
+.header_left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 50%;
+}
+
+.img_logo {
+  width: 180px;
+  height: 40px;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+
+.header_left h2 {
+  color: #ffffff;
+  font-size: 60px;
+  line-height: 66px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.header_left h3 {
+  color: #ffffff;
+  font-size: 38px;
+  line-height: 45.6px;
+  text-align: left;
+}
+
+.botton_start-now {
+  width: 304px;
+  height: 84px;
+  color: #ffffff;
+  font-family: Open Sans;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #EE3A5E, #FCC45C);
+  transition: background-color 0.3s ease;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.header_left p {
+  color: #565B68;
+  font-size: 16px;
+  text-align: left;
+  /*margin-top: 30px;*/
+}
+
+.header_rigth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50%;
+}
+
+.right_icon {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.img_english {
+  width: 101px;
+  height: 23px;
+  margin-right: 10px;
+}
+
+.botton_lonIn {
+  width: 140px;
+  height: 44px;
+  color: #ffffff;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_myDoc {
+  margin: 35px 0;
+}
+
+@media (max-width: 760px) {
+  .wrapper {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */
