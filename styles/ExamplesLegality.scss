@@ -46,6 +46,7 @@
       @include text-style($color-title1, $weight-700, 20px);
       align-self: flex-start;
       text-transform: uppercase;
+      padding-top: 3%;
     }
   
     .articles-container {
@@ -54,6 +55,7 @@
       flex-wrap: wrap;
       align-self: flex-start;
       justify-content: space-between;
+      margin-top: 29.94px;
   
       .article-card {
         width: 340px;
@@ -64,11 +66,11 @@
           width: 340px;
           height: 159px;
           object-fit: cover;
+          overflow: hidden;
         }
   
         h1 {
           text-align: start;
-          padding-top: 15px;
           font-weight: $weight-600;
           font-size: 24px; 
           color: $color-title;
@@ -76,9 +78,15 @@
   
         p {
           text-align: start;
-          padding-top: 15px;
           font-size: 14px;
           line-height: 19.6px;
+        }
+
+        .article-card:nth-of-type(2) img{
+          width: 340px;
+          height: 159px;
+          object-fit: cover;
+          object-position: top;
         }
       }
     }
@@ -87,6 +95,12 @@
       .container_main {
         @include container-max-width(100%);
         padding: 0 20px;
+      }
+
+      .text-exampl {
+        font-size: 20px;
+        text-align: left;
+        padding-top: 3%;
       }
   
       .articles-container {
@@ -102,8 +116,9 @@
   
           img {
             width: 100%;
-            height: auto;
           }
+
+          
   
           h1 {
             font-size: 24px;
@@ -121,11 +136,12 @@
       .text-exampl {
         font-size: 20px;
         text-align: center;
+        padding-top: 3%;
       }
   
       .articles-container {
         width: 100%;
-        padding: 0 10px;
+        padding: 2% 1%;
         flex-direction: row;
         flex-wrap: wrap;
   
@@ -135,7 +151,8 @@
   
           img {
             width: 100%;
-            height: auto;
+            height: 159px;
+            justify-content: center;
           }
   
           h1 {
@@ -144,7 +161,6 @@
   
           p {
             font-size: 16px;
-            line-height: 19.6px;
           }
         }
   
@@ -172,7 +188,7 @@
   
           img {
             width: 100%;
-            height: auto; 
+            height: 159px; 
           }
   
           h1 {
@@ -236,6 +252,14 @@
       background-size: cover;
       z-index: 0; 
     }
+
+    .container_main {
+      max-width: 1343px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2; 
+      padding: 1.66% 1.25% 6.875% 1.25%;
+    }
   
     h3,
     h1,
@@ -243,14 +267,6 @@
       padding: 1% 0;
       margin: 0;
       z-index: 2; 
-    }
-  
-    .container_main {
-      max-width: 1343px;
-      margin: 0 auto;
-      position: relative;
-      z-index: 2; 
-      padding: 1.66% 1.25% 6.875% 1.25%;
     }
   
     h3 {
@@ -280,11 +296,12 @@
       float: left;
       line-height: 28px;
     }
-  
+
     .image {
       width: 364px;
       height: 364px;
       float: right;
+      padding-left: 23px;
     }
   
     button {
@@ -315,7 +332,6 @@
 
         .text {
             float: left;
-            text-align: center;
         }
 
         .image {
@@ -385,11 +401,15 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-  
-        .text {
+
+       .text {
           margin-bottom: 12px;
           width: 100%;
           float: none;
+        }
+
+        .collecting-text {
+          padding-bottom: 29.24px;
         }
   
         .image {
@@ -398,10 +418,11 @@
       }
   
       button {
-        width: 50%;
-        height: 54px;
-        font-size: 26px;
+        width: 80%;
+        height: 74px;
+        font-size: 32px;
         margin: 20px auto 0;
+        
       }
 
       &::after {
@@ -418,13 +439,15 @@
       .legality_complete {
         text-align: start;
         width: 100%;
-        font-size: 18px;
+        font-size: 16px;
+        padding-top: 3%;
       }
 
      .legality_web {
         text-align: start;
         width: 100%;
         font-size: 26px;
+        padding-top: 16px;
      }
 
       .container {
@@ -432,19 +455,19 @@
         flex-direction: column;
   
         .collecting-text {
-            font-size: 14px;
+            font-size: 16px;
+            text-align: justify;
         }
   
         .image {
           display: none;
-          
         }
       }
   
       button {
-        width: 60%;
-        height: 44px;
-        font-size: 20px;
+        width: 80%;
+        height: 48px;
+        font-size: 24px;
         margin: 20px 10px;
         display: block;
         justify-content: center;
