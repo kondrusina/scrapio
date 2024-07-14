@@ -161,9 +161,10 @@
     justify-content: flex-start;
   }
   #examples .articles-container .article-card {
-    width: 48%;
+    width: 340px;
+    height: 350px;
     margin-bottom: 20px;
-    padding: 2%;
+    padding: 1%;
   }
   #examples .articles-container .article-card img {
     width: 100%;
@@ -178,7 +179,7 @@
 @media (max-width: 760px) {
   #examples .text-exampl {
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     padding-top: 3%;
   }
   #examples .articles-container {
@@ -208,6 +209,9 @@
     font-size: 18px;
     line-height: 18px;
     padding-top: 2%;
+    padding-left: 4, 47%;
+    text-align: center;
+    line-height: 24px;
   }
   #examples .articles-container {
     width: 100%;
@@ -289,7 +293,7 @@
 #legality h3,
 #legality h1,
 #legality .container {
-  padding: 1% 0;
+  padding: 2% 0;
   margin: 0;
   z-index: 2;
 }
@@ -377,7 +381,7 @@
     flex-direction: row;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding: 0;
   }
   #legality .container .text {
@@ -386,7 +390,7 @@
     text-align: left;
   }
   #legality .container .image {
-    width: 40%;
+    width: 60%;
     display: flex;
     justify-content: center;
   }
@@ -437,21 +441,23 @@
   #legality .legality_complete {
     text-align: start;
     width: 100%;
-    font-size: 16px;
+    font-size: 20px;
     padding-top: 3%;
+    padding-left: 6.64%;
   }
   #legality .legality_web {
     text-align: start;
     width: 100%;
-    font-size: 26px;
-    padding-top: 16px;
+    font-size: 24px;
+    padding-left: 5.9%;
   }
   #legality .container {
     padding: 0 10px;
     flex-direction: column;
+    padding-left: 5.9%;
   }
   #legality .container .collecting-text {
-    font-size: 16px;
+    font-size: 14px;
     text-align: justify;
   }
   #legality .container .image {
@@ -459,9 +465,9 @@
   }
   #legality button {
     width: 80%;
-    height: 48px;
-    font-size: 24px;
-    margin: 20px 10px;
+    height: 84px;
+    font-size: 32px;
+    margin: 14px 10px;
     display: block;
     justify-content: center;
     align-items: center;

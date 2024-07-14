@@ -110,16 +110,15 @@
         justify-content: flex-start;
   
         .article-card {
-          width: 48%;
+          width: 340px;
+          height: 350px;
           margin-bottom: 20px;
-          padding: 2%;
+          padding: 1%;
   
           img {
             width: 100%;
           }
 
-          
-  
           h1 {
             font-size: 24px;
           }
@@ -135,7 +134,7 @@
     @media (max-width: 760px) {
       .text-exampl {
         font-size: 20px;
-        text-align: center;
+        text-align: left;
         padding-top: 3%;
       }
   
@@ -173,7 +172,11 @@
         font-size: 18px;
         line-height: 18px;
         padding-top: 2%;
+        padding-left: 4,47%;
+        text-align: center;
+        line-height: 24px;
       }
+
       .articles-container {
         width: 100%;
         padding: 0 10px;
@@ -221,8 +224,6 @@
     background-size: cover;
     z-index: 1;
     
-   
-  
     &::before {
       content: "";
       position: absolute;
@@ -264,7 +265,7 @@
     h3,
     h1,
     .container {
-      padding: 1% 0;
+      padding: 2% 0;
       margin: 0;
       z-index: 2; 
     }
@@ -366,7 +367,7 @@
         flex-direction: row;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         padding: 0;
         
         .text {
@@ -376,7 +377,7 @@
         }
         
         .image {
-          width: 40%;
+          width: 60%;
           display: flex;
           justify-content: center;
         }
@@ -421,8 +422,7 @@
         width: 80%;
         height: 74px;
         font-size: 32px;
-        margin: 20px auto 0;
-        
+        margin: 20px auto 0; 
       }
 
       &::after {
@@ -439,23 +439,25 @@
       .legality_complete {
         text-align: start;
         width: 100%;
-        font-size: 16px;
+        font-size: 20px;
         padding-top: 3%;
+        padding-left: 6.64%;
       }
 
      .legality_web {
         text-align: start;
         width: 100%;
-        font-size: 26px;
-        padding-top: 16px;
+        font-size: 24px;
+        padding-left: 5.9%;
      }
 
       .container {
         padding: 0 10px;
         flex-direction: column;
+        padding-left: 5.9%;
   
         .collecting-text {
-            font-size: 16px;
+            font-size: 14px;
             text-align: justify;
         }
   
@@ -466,9 +468,9 @@
   
       button {
         width: 80%;
-        height: 48px;
-        font-size: 24px;
-        margin: 20px 10px;
+        height: 84px;
+        font-size: 32px;
+        margin: 14px 10px;
         display: block;
         justify-content: center;
         align-items: center;
