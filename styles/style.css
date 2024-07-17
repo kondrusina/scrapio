@@ -1,3 +1,4 @@
+
 * {
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -370,6 +371,8 @@ ul {
   }
 }
 
+
+
 /* SECTION WHO OWNS START */
 .who-owns {
   padding: 1.66% 1.25% 6.875% 1.25%;
@@ -454,6 +457,7 @@ ul {
 }
 
 /* SECTION WHO OWNS END */
+
 @media (max-width: 760px) {
   .wrapper {
     -webkit-box-pack: center;
@@ -461,6 +465,7 @@ ul {
             justify-content: center;
   }
 }
+
 /***EXAMPLES & LEGALYTY***/
 /***EXAMPLES START***/
 #examples {
@@ -479,6 +484,7 @@ ul {
   gap: 30px;
 }
 #examples .container_main {
+  padding: 1.66% 1.25% 6.875% 1.25%;
   max-width: 1343px;
   margin: 0 auto;
 }
@@ -489,12 +495,14 @@ ul {
   -ms-flex-item-align: start;
       align-self: flex-start;
   text-transform: uppercase;
+  padding-top: 3%;
 }
 #examples .articles-container {
   width: 1063px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-item-align: start;
@@ -502,6 +510,12 @@ ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+
+  flex-wrap: wrap;
+  align-self: flex-start;
+  justify-content: space-between;
+  margin-top: 29.94px;
+
 }
 #examples .articles-container .article-card {
   width: 340px;
@@ -514,25 +528,37 @@ ul {
   height: 159px;
   -o-object-fit: cover;
      object-fit: cover;
+  overflow: hidden;
 }
 #examples .articles-container .article-card h1 {
   text-align: start;
-  padding-top: 15px;
   font-weight: 600;
   font-size: 24px;
   color: #283456;
 }
 #examples .articles-container .article-card p {
   text-align: start;
-  padding-top: 15px;
   font-size: 14px;
   line-height: 19.6px;
+}
+#examples .articles-container .article-card .article-card:nth-of-type(2) img {
+  width: 340px;
+  height: 159px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
 }
 @media (max-width: 1024px) {
   #examples .container_main {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
+  }
+  #examples .text-exampl {
+    font-size: 20px;
+    text-align: left;
+    padding-top: 3%;
   }
   #examples .articles-container {
     width: 100%;
@@ -552,7 +578,6 @@ ul {
   }
   #examples .articles-container .article-card img {
     width: 100%;
-    height: auto;
   }
   #examples .articles-container .article-card h1 {
     font-size: 24px;
@@ -565,9 +590,11 @@ ul {
   #examples .text-exampl {
     font-size: 20px;
     text-align: center;
+    padding-top: 3%;
   }
   #examples .articles-container {
     width: 100%;
+
     padding: 0 10px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -575,6 +602,11 @@ ul {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+
+    padding: 2% 1%;
+    flex-direction: row;
+    flex-wrap: wrap;
+>
   }
   #examples .articles-container .article-card {
     width: 48%;
@@ -582,17 +614,22 @@ ul {
   }
   #examples .articles-container .article-card img {
     width: 100%;
-    height: auto;
+    height: 159px;
+    justify-content: center;
   }
   #examples .articles-container .article-card h1 {
     font-size: 24px;
   }
   #examples .articles-container .article-card p {
     font-size: 16px;
-    line-height: 19.6px;
   }
 }
 @media (max-width: 460px) {
+  #examples .text-exampl {
+    font-size: 18px;
+    line-height: 18px;
+    padding-top: 2%;
+  }
   #examples .articles-container {
     width: 100%;
     padding: 0 10px;
@@ -608,10 +645,11 @@ ul {
   #examples .articles-container .article-card {
     width: calc(100% - 20px);
     margin-bottom: 20px;
+    min-height: 350px;
   }
   #examples .articles-container .article-card img {
     width: 100%;
-    height: auto;
+    height: 159px;
   }
   #examples .articles-container .article-card h1 {
     font-size: 24px;
@@ -649,6 +687,22 @@ ul {
   background-size: cover;
   z-index: 1;
 }
+#legality::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../public/images/examples/g34.svg");
+  background-color: #565B68;
+  opacity: 0.1;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  mix-blend-mode: darken;
+  z-index: 0;
+}
 #legality::after {
   content: "";
   position: absolute;
@@ -661,17 +715,18 @@ ul {
   background-size: cover;
   z-index: 0;
 }
+#legality .container_main {
+  max-width: 1343px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  padding: 1.66% 1.25% 6.875% 1.25%;
+}
 #legality h3,
 #legality h1,
 #legality .container {
   padding: 1% 0;
   margin: 0;
-  z-index: 2;
-}
-#legality .container_main {
-  max-width: 1343px;
-  margin: 0 auto;
-  position: relative;
   z-index: 2;
 }
 #legality h3 {
@@ -683,6 +738,7 @@ ul {
   color: #283456;
   font-weight: 700;
   font-size: 38px;
+  line-height: 45.6px;
 }
 #legality .container {
   width: 100%;
@@ -695,7 +751,7 @@ ul {
   color: #565B68;
 }
 #legality .text {
-  width: 55%;
+  width: 100%;
   float: left;
   line-height: 28px;
 }
@@ -703,6 +759,7 @@ ul {
   width: 364px;
   height: 364px;
   float: right;
+  padding-left: 23px;
 }
 #legality button {
   width: 470px;
@@ -721,6 +778,32 @@ ul {
   margin-left: 0.4em;
   margin-top: 41px;
   z-index: 2;
+}
+@media (max-width: 1280px) {
+  #legality .container_main {
+    max-width: 100%;
+  }
+  #legality .container {
+    flex-direction: row;
+  }
+  #legality .text {
+    float: left;
+  }
+  #legality .image {
+    width: 100%;
+    height: auto;
+    float: right;
+    margin-top: 20px;
+    text-align: center;
+  }
+  #legality button {
+    margin: 20px auto 0;
+    display: block;
+  }
+  #legality::after {
+    height: 1000px;
+    background-size: contain;
+  }
 }
 @media (max-width: 1024px) {
   #legality .container_main {
@@ -768,39 +851,62 @@ ul {
     font-size: 30px;
     margin: 20px 0;
   }
+  #legality::after {
+    height: 900px;
+    background-size: contain;
+  }
 }
 @media (max-width: 760px) {
   #legality .container {
+
     padding: 0 10px;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+
+    padding: 0 8px;
+    flex-direction: column;
+    align-items: center;
+
     text-align: center;
   }
-  #legality .container .text, #legality .container .image {
+  #legality .container .text {
+    margin-bottom: 12px;
     width: 100%;
     float: none;
   }
-  #legality .container .text {
-    margin-bottom: 20px;
+  #legality .container .collecting-text {
+    padding-bottom: 29.24px;
   }
   #legality .container .image {
     display: none;
   }
   #legality button {
     width: 80%;
-    height: 84px;
-    font-size: 30px;
-    margin: 20px 0;
+    height: 74px;
+    font-size: 32px;
+    margin: 20px auto 0;
+  }
+  #legality::after {
+    height: 700px;
+    background-size: contain;
   }
 }
 @media (max-width: 460px) {
   #legality .container_main {
     padding: 0 10px;
   }
-  #legality .legality_complete, #legality .legality_web {
+  #legality .legality_complete {
     text-align: start;
     width: 100%;
+    font-size: 16px;
+    padding-top: 3%;
+  }
+  #legality .legality_web {
+    text-align: start;
+    width: 100%;
+    font-size: 26px;
+    padding-top: 16px;
   }
   #legality .container {
     padding: 0 10px;
@@ -809,24 +915,35 @@ ul {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #legality .container .text, #legality .container .image {
-    width: 100%;
-    float: none;
-    text-align: start;
-  }
-  #legality .container .text {
-    margin-bottom: 20px;
+  #legality .container .collecting-text {
+    font-size: 16px;
+    text-align: justify;
   }
   #legality .container .image {
     display: none;
   }
   #legality button {
-    width: calc(80% - 20px);
-    height: 84px;
-    font-size: 30px;
+    width: 80%;
+    height: 48px;
+    font-size: 24px;
     margin: 20px 10px;
     display: block;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
   }
+
 }
+  #legality::after {
+    height: 500px;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 760px) {
+  .wrapper {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */
+
