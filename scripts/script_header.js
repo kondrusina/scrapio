@@ -16,3 +16,16 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("login clicked");
   });
 });
+
+function replaceImg() {
+  const imgEnglish = document.querySelector(".btn-english img");
+
+  if (window.innerWidth <= 460) {
+    imgEnglish.src = "../public/img_header/english_sing.svg";
+  } else {
+    imgEnglish.src = "../public/img_header/english.png";
+  }
+}
+replaceImg();
+
+window.addEventListener("resize", replaceImg);
