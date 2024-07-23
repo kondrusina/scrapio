@@ -1,3 +1,4 @@
+@import 'variables.scss';
 /***EXAMPLES & LEGALYTY***/
 @mixin flex-center-column($gap: 0) {
     justify-content: center;
@@ -35,16 +36,15 @@
   #examples {
     width: 100%;
     background-color: #FFFFFF;
+    padding: 1.66% 1.25% 6.875% 1.25%;
     @include flex-center-column(30px);
     
-    .container_main {
-      padding: 1.66% 1.25% 6.875% 1.25%;
+    .container-main {
       @include container-max-width(1343px);
     }
   
     .text-exampl {
       @include text-style($color-title1, $weight-700, 20px);
-      align-self: flex-start;
       text-transform: uppercase;
       padding-top: 3%;
     }
@@ -53,9 +53,8 @@
       width: 1063px;
       display: flex;
       flex-wrap: wrap;
-      align-self: flex-start;
       justify-content: space-between;
-      margin-top: 29.94px;
+      margin-top: 2.81%;
   
       .article-card {
         width: 340px;
@@ -64,19 +63,21 @@
   
         img {
           width: 340px;
-          height: 159px;
+          max-height: 159px;
           object-fit: cover;
           overflow: hidden;
         }
   
-        h1 {
-          text-align: start;
-          font-weight: $weight-600;
-          font-size: 24px; 
+        .article-card-title {
           color: $color-title;
+          font-size: 24px;
+          font-weight: $weight-600;
+          line-height: 26.4px;
+          text-align: left;
+          margin: 6.19% 0;
         }
   
-        p {
+        .article-card-p {
           text-align: start;
           font-size: 14px;
           line-height: 19.6px;
@@ -84,7 +85,7 @@
 
         .article-card:nth-of-type(2) img{
           width: 340px;
-          height: 159px;
+          max-height: 159px;
           object-fit: cover;
           object-position: top;
         }
@@ -92,7 +93,7 @@
     }
   
     @media (max-width: 1024px) {
-      .container_main {
+      .container-main {
         @include container-max-width(100%);
         padding: 0 20px;
       }
@@ -111,7 +112,7 @@
   
         .article-card {
           width: 340px;
-          height: 350px;
+          height: auto;
           margin-bottom: 20px;
           padding: 1%;
   
@@ -119,11 +120,11 @@
             width: 100%;
           }
 
-          h1 {
+          .article-card-title {
             font-size: 24px;
           }
   
-          p {
+          .article-card-p {
             font-size: 15px;
           }
         }
@@ -150,15 +151,15 @@
   
           img {
             width: 100%;
-            height: 159px;
+            max-height: 159px;
             justify-content: center;
           }
   
-          h1 {
+          .article-card-title {
             font-size: 24px;
           }
   
-          p {
+          .article-card-p {
             font-size: 16px;
           }
         }
@@ -185,21 +186,22 @@
         text-align: start;
   
         .article-card {
-          width: calc(100% - 20px); 
+          width: calc(90% - 20px); 
           margin-bottom: 20px; 
-          min-height: 350px;
+          max-height: 350px;
+          
   
           img {
             width: 100%;
-            height: 159px; 
+            max-height: 159px; 
           }
   
-          h1 {
+          .article-card-title {
             font-size: 24px;
             text-align: start; 
           }
   
-          p {
+          .article-card-p {
             font-size: 14px;
             text-align: start; 
           }
@@ -223,6 +225,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
+    transition: all 0.3s ease;
     
     &::before {
       content: "";
@@ -245,7 +248,7 @@
       content: "";
       position: absolute;
       width: 100%;
-      height: 1541px;
+      min-height: 500px; 
       bottom: 0;
       background-image: url("../public/images/examples/Ellipse98.svg");
       background-position: bottom center;
@@ -254,12 +257,13 @@
       z-index: 0; 
     }
 
-    .container_main {
-      max-width: 1343px;
+    .container-main {
+      @include container-max-width(1343px);
+      width: 1343px;
+      padding: 1.66% 1.25% 6.875% 1.25%;
       margin: 0 auto;
       position: relative;
       z-index: 2; 
-      padding: 1.66% 1.25% 6.875% 1.25%;
     }
   
     h3,
@@ -268,6 +272,7 @@
       padding: 2% 0;
       margin: 0;
       z-index: 2; 
+      transition: font-size 0.3s ease;
     }
   
     h3 {
@@ -284,28 +289,32 @@
     }
   
     .container {
-      width: 100%;
-      display: flex;
-      padding-bottom: 14.9px;
-      font-size: 20px;
-      padding-top: 14px;
-      color: $color-all;
+    max-width:1343px;
+    display: flex;
+    flex-direction: row; 
+    padding-bottom: 14.9px;
+    font-size: 20px;
+    padding-top: 14px;
+    color: $color-all;
     }
   
     .text {
-      width: 100%;
+      width: 50.3%;
       float: left;
       line-height: 28px;
     }
+    .collecting-text-bold{
+    font-weight: bold;
+    }
 
-    .image {
+    .image-legality {
       width: 364px;
       height: 364px;
       float: right;
       padding-left: 23px;
     }
   
-    button {
+    .button-legality {
       width: 470px;
       height: 84px;
       color: #fff;
@@ -323,7 +332,7 @@
     }
 
     @media (max-width: 1280px) {
-        .container_main {
+        .container-main {
             max-width: 100%; 
         }
 
@@ -333,9 +342,10 @@
 
         .text {
             float: left;
+            width: 100%;
         }
 
-        .image {
+        .image-legality  {
             width: 100%;
             height: auto;
             float: right;
@@ -343,20 +353,20 @@
             text-align: center;
         }
 
-        button {
+        .button-legality {
             margin: 20px auto 0;
             display: block;
         }
 
         &::after {
-          height: 1000px;
+          min-height: 1000px;
           background-size: contain;
         }
     }
 
   
     @media (max-width: 1024px) {
-      .container_main {
+      .container-main {
         @include container-max-width(100%);
         padding: 0 20px;
         align-items: center;
@@ -376,14 +386,14 @@
           text-align: left;
         }
         
-        .image {
+        .image-legality {
           width: 60%;
           display: flex;
           justify-content: center;
         }
       }
   
-      button {
+      .button-legality {
         width: 80%;
         height: 84px;
         font-size: 30px;
@@ -391,7 +401,7 @@
       }
 
       &::after {
-        height: 900px;
+        min-height: 900px;
         background-size: contain;
       }
     }
@@ -410,44 +420,45 @@
         }
 
         .collecting-text {
-          padding-bottom: 29.24px;
+          padding-bottom: 2.81%;
         }
   
-        .image {
+        .image-legality {
           display: none;
         }
       }
   
-      button {
-        width: 80%;
-        height: 74px;
+      .button-legality{
+        width: 70%;
+        height: 84px;
         font-size: 32px;
         margin: 20px auto 0; 
       }
 
       &::after {
-        height: 700px;
+        min-height: 700px;
         background-size: contain;
       }
     }
   
     @media (max-width: 460px) {
-      .container_main {
+      .container-main {
+        height: auto;
         padding: 0 10px;
       }
   
-      .legality_complete {
+      .legality-complete {
         text-align: start;
         width: 100%;
         font-size: 20px;
-        padding-top: 3%;
-        padding-left: 6.64%;
+        padding-top: 2.6%;
+        padding-left: 5.9%;
       }
 
-     .legality_web {
+     .legality-web {
         text-align: start;
         width: 100%;
-        font-size: 24px;
+        font-size: 28px;
         padding-left: 5.9%;
      }
 
@@ -457,19 +468,22 @@
         padding-left: 5.9%;
   
         .collecting-text {
-            font-size: 14px;
+            font-size: 16px;
             text-align: justify;
         }
+        .collecting-text-bold{
+          font-size: 16px;
+        }
   
-        .image {
+        .image-legality {
           display: none;
         }
       }
   
-      button {
-        width: 80%;
+      .button-legality {
+        width: 70%;
         height: 84px;
-        font-size: 32px;
+        font-size: 30px;
         margin: 14px 10px;
         display: block;
         justify-content: center;
@@ -479,7 +493,7 @@
       }
 
       &::after {
-        height: 500px;
+        min-height: 500px;
         background-size: contain;
       }
     }
