@@ -1,0 +1,253 @@
+/***REQUEST FORM**/
+#formulario {
+  width: 100%;
+  height: 1080px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+#formulario::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  background-image: url("../public/images/requestForm/ellipse98.svg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+#formulario .container-main {
+  width: 600px;
+  height: 87.68%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 7px 7px 9px 9px rgba(0, 0, 0, 0.15);
+}
+#formulario .container-form {
+  width: 100%;
+  max-width: 360px;
+  height: 87.68%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+#formulario .form-title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 26.4px;
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+#formulario .form-description {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  margin-bottom: 16px;
+}
+#formulario .name-label,
+#formulario .country-label,
+#formulario .message-label,
+#formulario .email-label,
+#formulario .redes-label,
+#formulario .scrapping-label,
+#formulario .robot-label {
+  display: block;
+  margin-bottom: 16px;
+}
+#formulario .name-leg,
+#formulario .country-leg,
+#formulario .message-leg,
+#formulario .scrapping-leg,
+#formulario .email-leg,
+#formulario .redes-leg,
+#formulario .robot-leg {
+  font-size: 16px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+#formulario .required {
+  color: red;
+  font-size: 1.2em;
+}
+#formulario input[type=text],
+#formulario input[type=email],
+#formulario textarea,
+#formulario select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#formulario textarea {
+  resize: vertical;
+}
+#formulario .error {
+  color: red;
+  font-size: 12px;
+}
+#formulario a {
+  display: block;
+  text-align: center;
+  margin-top: 16px;
+  text-decoration: none;
+  color: #333;
+}
+#formulario a:hover {
+  text-decoration: underline;
+}
+#formulario .robot-label {
+  display: flex;
+  align-items: center;
+}
+#formulario .robot-label legend {
+  margin-right: 10px;
+}
+#formulario .robot-label input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.robot-label {
+  display: flex;
+  align-items: center;
+}
+.robot-label .robot-leg {
+  margin-right: 10px;
+}
+
+.slider {
+  position: relative;
+  display: inline-block;
+  width: 41px;
+  height: 24px;
+  background-color: #ccc;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  bottom: 0;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input[type=checkbox]:checked + .slider {
+  background-color: rgba(39, 174, 95, 0.4235294118);
+}
+input[type=checkbox]:checked + .slider::before {
+  transform: translateX(20px);
+  background-color: #27AE60;
+}
+
+.button-send[type=submit] {
+  width: 100%;
+  height: 56px;
+  display: inline-block;
+  align-self: center;
+  padding: 10px;
+  background-color: rgba(134, 125, 232, 0.5);
+  color: #FFFFFF;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+.button-send[type=submit].active {
+  background-color: rgb(134, 125, 232);
+}
+
+#formulario .back-home {
+  text-align: center;
+  display: block;
+  color: #867DE8;
+  text-decoration: none;
+  font-size: 12px;
+  padding-top: 16px;
+  padding-bottom: 39.94px;
+}
+#formulario .back-home:hover {
+  text-decoration: underline;
+}
+
+/***** Confirmation form ****/
+#confirmForm {
+  width: 600px;
+  min-height: 431px;
+  border-radius: 16px;
+  box-shadow: 6px 6px 10px 10px rgba(0, 0, 0, 0.15);
+  padding: 5.3% 2.6% 5.8% 2.6%;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+#confirmForm .img-confirm {
+  width: 113.14px;
+  min-height: 112px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4.4%;
+}
+#confirmForm .requiest-h1 {
+  width: 51.8%;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26.4px;
+  text-align: center;
+  justify-content: center;
+  padding-top: 32px;
+}
+#confirmForm .starting-p {
+  width: 60.5%;
+  color: #565B68;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22.4px;
+  align-items: center;
+  padding-top: 4.4%;
+}
+#confirmForm .contact-p {
+  width: 51.5%;
+  color: #565B68;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 22.4px;
+  padding-top: 4.4%;
+}
+#confirmForm .btnGoHome {
+  width: 60%;
+  height: 56px;
+  gap: 10px;
+  background-color: #FFFFFF;
+  color: #867DE8;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  border: 1px solid #867DE8;
+  border-radius: 16px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 4.4%;
+}
+#confirmForm .hidden {
+  display: none;
+}/*# sourceMappingURL=requestForm.css.map */

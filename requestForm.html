@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Form</title>
+
+     <!-- -----style CSS -------- -->
+     <link rel="stylesheet" href="styles/requestForm.css">
+
+</head>
+<body>
+    <section id="formulario">
+        <form id="initialForm">
+            <div class="container-main">
+                <div class="container-form">
+                    <h1 class="form-title">Send request</h1>
+                    <p class="form-description">Send a request to scrape the required sites. Describe below what data you need and how often. We will conduct an analysis and contact you.</p>
+                    <label class="name-label">
+                        <legend class="name-leg">Name:<span class="required">*</span></legend>
+                        <input class="name__input" type="text" name="Name" placeholder="Your name o company name" required>
+                        <span class="error" id="firstNameError"></span>
+                    </label>
+               
+                    <label class="country-label">
+                        <legend class="country-leg">Country:</legend>
+                        <select class="country" name="country" placeholder="What country are you from?">
+                          <option value="">What country are you from?</option>
+                          <option value="LA">LA</option>
+                          <option value="USA">USA</option>
+                          <option value="Europa">Europa</option>
+                        </select>
+                    </label>
+                    <label class="message-label">
+                        <legend class="message-leg">What data do we collect?<span class="required">*</span></legend>
+                        <textarea class="message" name="message" placeholder="Which site(s) do we parse? Describe the list of sites and the fields required for parsing for each site." rows="8" required></textarea>
+                    </label>
+
+                    <label class="scrapping-label">
+                        <legend class="scrapping-leg"> Scraping frequency:</legend>
+                        <input class="scraping__input" type="text" name="scraping" placeholder="How often do you need new data?" required>
+                        <span class="error" id="firstNameError"></span>
+                    </label>
+                
+                    <label class="email-label">
+                        <legend class="email-leg">Contact e-mail:<span class="required">*</span></legend>
+                        <input class="email__input" type="email" name="email" placeholder="Enter your contact email" required>
+                        <span class="error" id="emailError"></span>
+                    </label> 
+                
+                    <label class="redes-label">
+                        <legend class="redes-leg">Telegram, WhatsApp, Viber...:</legend>
+                        <input class="redes__input" type="text" name="redes" placeholder="Your nickname or social networks" required>
+                        <span class="error" id="firstNameError"></span>
+                    </label>
+           
+                    <label class="robot-label">
+                        <legend class="robot-leg">I am not a robot<span class="required">*</span></legend>
+                        <input class="robot__input" type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <input class="button-send" type="submit" value="Send"></input>
+                    <a class="back-home" href="/index.html">Back to home page</a>
+                </div>
+            </div>
+        </form>
+        
+        <div id="confirmForm" class="hidden">
+            <h1 class="request-h1">Request has been sent</h1>
+            <img class="img-confirm" src="public/images/requestForm/vector.svg" alt="Vector">
+            <p class="starting-p">We are already starting to analyze your.</p>
+            <p class="contact-p"> We will contact you shortly. <br> Thank you for using our service!</p>
+            <button class="btnGoHome" onclick="goToHomePage()">Go back to the main page</button>
+        </div>
+    </section>
+
+    <script src="scripts/requestForm.js"></script>
+</body>
+</html>
