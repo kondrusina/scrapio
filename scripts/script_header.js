@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const btn_lonIin = document.querySelector(".botton-lon-in");
   btn_lonIin.addEventListener("click", () => {
     console.log("login clicked");
+    window.location.href = "../HTML/index_authorization.html";
   });
 });
 

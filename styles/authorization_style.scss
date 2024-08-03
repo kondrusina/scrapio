@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+
+.backgraund-wave {
+  position: relative;
+  max-width: 100%;
+}
+
+.btn-logo-scrapio {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+  border: none;
+  background: transparent;
+  z-index: 1000;
+}
+
+.chat {
+  position: absolute;
+  bottom: 6%;
+  right: 5%;
+}
+.wellcome-window {
+  position: absolute;
+  top: 24%;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 10px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(242, 241, 241);
+}
+.wellcom {
+  font-family: Open Sans;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 26.4px;
+  color: #283456;
+  margin-top: 32px;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22.4px;
+  color: #565b68;
+}
+
+.input-conteiner {
+  position: relative;
+}
+.input-conteiner img {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+input {
+  border: solid #bdbdbd 1px;
+  border-radius: 16px;
+  width: 360px;
+  height: 44px;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19.6px;
+  color: #828282;
+  padding-left: 40px;
+}
+
+.forgot-rassword {
+  position: absolute;
+  top: 32%;
+  right: 10px;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16.8px;
+  color: #867de8;
+  background-color: transparent;
+  border: none;
+}
+.password {
+  display: flex;
+  flex-direction: column;
+}
+
+.login {
+  border: none;
+  background-color: #beb9f1;
+  width: 360px;
+  height: 56px;
+  border-radius: 16px;
+}
+.login div {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #ffffff;
+  margin: 0 auto;
+}
+.sing-google {
+  width: 360px;
+  height: 44px;
+  border: solid #bdbdbd 1px;
+  border-radius: 16px;
+  background-color: transparent;
+}
+.sing-apple {
+  width: 360px;
+  height: 44px;
+  border: solid #bdbdbd 1px;
+  border-radius: 16px;
+  background-color: transparent;
+}
+.back-home-page {
+  color: #867de8;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 16.8px;
+  border: none;
+  width: 360px;
+  height: 44px;
+  margin: 0 auto 20px;
+  background-color: transparent;
+}
+
+@media (max-width: 1280px) {
+  .wellcome-window {
+    left: 52%;
+    top: 29%;
+  }
+  .chat {
+    right: 4%;
+    bottom: 3%;
+  }
+}
+
+// @media (max-width: 1024px) {
+//   .wellcome-window {
+//     left: 52%;
+//     top: 29%;
+//   }
+//   .chat {
+//     right: 4%;
+//     bottom: 3%;
+//   }
+// }
+
+@media (max-width: 760px) {
+  .logo-scrapio {
+    left: 37%;
+    top: 7%;
+  }
+  .wellcome-window {
+    left: 54%;
+    top: 29%;
+  }
+  .chat {
+    left: 49%;
+    top: 77%;
+  }
+}
+
+@media (max-width: 460px) {
+  .logo-scrapio {
+    left: 30%;
+  }
+  .wellcome-window {
+    left: 49%;
+    top: 29%;
+  }
+  .chat {
+    left: 49%;
+    top: 76%;
+  }
+}
