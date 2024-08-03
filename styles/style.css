@@ -728,6 +728,9 @@ ul {
   margin-top: 30px;
   border: none;
 }
+
+.conteiner .main-header .header-bottom .header-left .paragraf p {
+
 @media (max-width: 460px) {
   .botton-start-now {
     width: 280px;
